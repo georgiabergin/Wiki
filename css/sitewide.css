@@ -1,0 +1,210 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	
+	font-family: "Garamond", serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #e7e3ec;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 0.5em;
+	margin-right: auto;
+	margin-bottom: 3em;
+	margin-left: auto;
+	width: 800px;
+	padding-top: 4em;
+	background-color: :#e7e3ec;
+	border: 0px solid #eee;
+
+
+}
+
+.home{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color: #e7e3ec;
+}
+
+.hometab{
+	grid-column: 2/3;
+
+}
+
+.what{
+	grid-column: 1/4;
+	text-align: center;
+}
+
+.founding{
+	grid-column: 4/7;
+	text-align: center;
+}
+
+
+.golden{
+	grid-column: 7/9;
+	text-align: center;
+}
+
+.criticism{
+	grid-column: 9/10;
+}
+
+/*criticism*/
+
+.criticismpage{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.image{
+	grid-column: 1/12;
+	padding-top: 3em;
+	padding-bottom: 5em;
+	
+}
+
+
+
+.criticismtext{
+	font-family: "Garamond", serif;
+	font-weight: lighter;
+	padding-top: 0em;
+	padding-bottom: 1em;
+	text-align: justify;
+	font-size: 120%;
+	line-height: 35px;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+	grid-column: 2/10;
+	
+}
+
+.center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+}
+
+
+/*golden*/
+
+.title{
+	word-spacing: 10px;
+	line-height: 30px;
+	letter-spacing: 7px;
+	font-size: 20px;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	grid-column: 2/10;
+	display: inline;
+
+}
+
+
+
+h1{
+	margin-left: 2.5em;
+	font-size: 70px;
+	letter-spacing: 7px;
+	padding-left: 0.5em;
+
+}
+
+h2{
+	padding-top: 2em;
+	padding-bottom: 1em;
+	padding-left: 3em;
+	font-family: "Gill Sans", sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+
+
+h4{
+	font-family: "Gill Sans", sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+a{
+	color:
+	#f36d60;
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 15em;
+    word-spacing: 0.5em;
+}
+
+
+h3{
+	font-size: 30px;
+	font-family: "Gill Sans", sans-serif;
+	padding-top: 0.15em;
+	padding-bottom: 0.15em;
+	border: 0.15em;
+
+}
+ 
+li {
+    display: inline;
+    
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 130%;
+} 
+
+li a:hover {
+    color: white;
+}
+
+a:hover {
+	color: white;
+}
+
